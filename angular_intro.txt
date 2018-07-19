@@ -97,3 +97,5 @@ Directives are instructions to the DOM
         </ng-template>
 ---> ngStyle to set style to the template elements
 --> ngFor
+
+test
