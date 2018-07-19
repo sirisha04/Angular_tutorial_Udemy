@@ -62,7 +62,7 @@ element type selectors
 eg:In component-selector:'app-root'
     In html file:<app-root></app-root>
 
-attribute type selectors
+attribute type selectorsgi
 eg:selector:`[app-root]`
     In hmtl file:<div app-root></div>
 class type selectors
@@ -99,3 +99,4 @@ Directives are instructions to the DOM
 --> ngFor
 
 test
+test1
