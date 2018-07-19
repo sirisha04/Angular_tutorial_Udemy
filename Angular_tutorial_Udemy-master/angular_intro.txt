@@ -99,5 +99,3 @@ Directives are instructions to the DOM
 --> ngFor
 
 test
-test1
-test
