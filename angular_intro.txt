@@ -110,6 +110,7 @@ Components(custom Properties &Events)
 
 Binding to custom properties:(expose our own properties to the other components)
 ----------------------------
+from when parent to child component
 To expose any of the property to other components we need to add @Input() decorator to the property 
 eg:@Input() element:{type:string,name:string,content:string};
     also import {Input} from @angular/core; --server component
@@ -120,6 +121,8 @@ so now this property can be used as "srvElement" in app component
 
 Binding to Custom Events:(@Output)
 ------------------------
+from child component to parent componet
+when a button is added in cockpit component and want to communicate this to app component
 go through section 5 ,65 lecture
 We can also an alias to event
 eg:@Output(bbCreated)
