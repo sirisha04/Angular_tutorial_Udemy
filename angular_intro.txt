@@ -101,6 +101,31 @@ Directives are instructions to the DOM
 test
 test1
 
-components & DataBinding:
+components & DataBinding:(This is usesful for components communication)
 -------------------------
-df
+Splitting apps into components will help bundle our business logic into different componensts this will also help in reusability of the components
+Property & Event Binding:
+property and event binding can be done on HTML Elements(Native Property & Events),Directives(Custome propeties & events),
+Components(custom Properties &Events)
+
+Binding to custom properties:(expose our own properties to the other components)
+----------------------------
+To expose any of the property to other components we need to add @Input() decorator to the property 
+eg:@Input() element:{type:string,name:string,content:string};
+    also import {Input} from @angular/core; --server component
+    now we can access this property in the app component(parent component)
+We can also an alias to property
+eg:@Input(srvElement) element:{type:string,name:string,content:string}
+so now this property can be used as "srvElement" in app component
+
+Binding to Custom Events:(@Output)
+------------------------
+go through section 5 ,65 lecture
+We can also an alias to event
+eg:@Output(bbCreated)
+
+View encapsulation defines whether the template and styles defined within the component can affect the whole application or vice versa. Angular provides three encapsulation strategies:
+Emulated (default) - styles from main HTML propagate to the component. Styles defined in this component's @Component decorator are scoped to this component only.
+Native - styles from main HTML do not propagate to the component. Styles defined in this component's @Component decorator are scoped to this component only.
+None - styles from the component propagate back to the main HTML and therefore are visible to all components on the page. Be careful with apps that have None and Native components in the application. All components with None encapsulation will have their styles duplicated in all 
+components with Native encapsulation.
