@@ -132,3 +132,13 @@ Emulated (default) - styles from main HTML propagate to the component. Styles de
 Native - styles from main HTML do not propagate to the component. Styles defined in this component's @Component decorator are scoped to this component only.
 None - styles from the component propagate back to the main HTML and therefore are visible to all components on the page. Be careful with apps that have None and Native components in the application. All components with None encapsulation will have their styles duplicated in all 
 components with Native encapsulation.
+
+Routing:
+-------
+The routing mechanism allows us to navigate between different views(via components) and allowing us to configure it to make it more flexible while providing us with features like lazy loading to ease load times and increase performance.
+Steps :-
+Create a module to store routing paths and define different paths and routes in it.
+Import the routing module to your app.module.ts and add routing module name to the imports of @NgModule.
+Add routing selector tags to your appcomponent's html.
+Adding router links for navigation and
+<base href="/"> to our index.html  
