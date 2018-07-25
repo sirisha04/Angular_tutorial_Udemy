@@ -102,6 +102,7 @@ test
 test1
 
 components & DataBinding:(This is usesful for components communication)
+
 -------------------------
 Splitting apps into components will help bundle our business logic into different componensts this will also help in reusability of the components
 Property & Event Binding:
@@ -149,3 +150,9 @@ Ahead of time Compilation-components and templates are compiled at build time in
 compile time errors will be caught before the compilation.
 This increases the performance
 Faster download times as the application is compiled and bundled at build time, which eliminates the need of loading the angular compiler and its libraries leading to a lesser runtime.
+
+Lazy Loading:
+------------
+Lazy loading speeds up application start up time
+it creates multiple bundles and loads them on demand in run-time
+If we load all components and templates in to one big bundle ,it would lead to high performance penalty.(Performance will be reduced)
