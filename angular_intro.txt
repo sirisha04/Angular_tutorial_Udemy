@@ -96,7 +96,8 @@ else condition can also be added to this ngIf
    eg:<p *ngIf="someMethod() ; else other">{{}}</p>
         <ng-template #other>
         <p>else condition</p>
-        </ng-template>
+
+</ng-template>
 ---> ngStyle to set style to the template elements
 --> ngFor
 
@@ -108,6 +109,7 @@ components & DataBinding:(This is usesful for components communication)
 -------------------------
 Splitting apps into components will help bundle our business logic into different componensts this will also help in reusability of the components
 Property & Event Binding:
+
 property and event binding can be done on HTML Elements(Native Property & Events),Directives(Custome propeties & events),
 Components(custom Properties &Events)
 
@@ -164,3 +166,4 @@ Pipes:
 Pipes are used to transform the data in the template itself
 angular has built in pipes for currency ,date and character cases.we, can also create custom pipes
 Pipes takes in data as input and produces output as we desire(in the desired format)
+
