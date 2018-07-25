@@ -81,6 +81,7 @@ combining both:
 -->Two-way-Binding
 String Interpolation:
 -------------------
+
 notation - {{}} StringInterpolation is binding of a string(component.ts) to html element by using {{}} notation
 Property Binding notation - []=""
 
@@ -90,7 +91,8 @@ Directives are instructions to the DOM
  --> ngIf - this attribute can be added in the template to execute when the condition is true.
     ngIf is a structural directive so we add '*' before it
  eg:<p *ngIf="true"(or some method/variable which returns true)>{{}}</p>
-   else condition can also be added to this ngIf
+
+else condition can also be added to this ngIf
    eg:<p *ngIf="someMethod() ; else other">{{}}</p>
         <ng-template #other>
         <p>else condition</p>
@@ -156,3 +158,9 @@ Lazy Loading:
 Lazy loading speeds up application start up time
 it creates multiple bundles and loads them on demand in run-time
 If we load all components and templates in to one big bundle ,it would lead to high performance penalty.(Performance will be reduced)
+
+Pipes:
+----
+Pipes are used to transform the data in the template itself
+angular has built in pipes for currency ,date and character cases.we, can also create custom pipes
+Pipes takes in data as input and produces output as we desire(in the desired format)
