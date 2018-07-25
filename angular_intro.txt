@@ -142,3 +142,10 @@ Import the routing module to your app.module.ts and add routing module name to t
 Add routing selector tags to your appcomponent's html.
 Adding router links for navigation and
 <base href="/"> to our index.html  
+
+AOT Compilation:
+--------------
+Ahead of time Compilation-components and templates are compiled at build time instead at the compile time
+compile time errors will be caught before the compilation.
+This increases the performance
+Faster download times as the application is compiled and bundled at build time, which eliminates the need of loading the angular compiler and its libraries leading to a lesser runtime.
