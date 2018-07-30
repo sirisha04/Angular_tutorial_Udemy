@@ -183,7 +183,12 @@ renderer is used for any DOM manipulations eg:setStyle method in Renderer
 @HostListener Decorator:
 -----------------------
 This is a function decorator that accepts an event name as an argument. When that event gets fired on the host element it calls the associated function
-eg:@HostListener('mouseover') onHover() {
-  window.alert("hover");
-}
-
+eg:@HostListener ('mouseenter') mouseover(){
+    this.renderer.setStyle(this.elRef.nativeElement,'background-color','blue');
+  }
+@HostBinding:This can be used along with hostlistner to avoid using render object
+eg:@HostBinding('style.backgroundColor') backgroundcolor : string='yellow';
+@HostListener ('mouseenter') mouseover(){
+   this.backgroundcolor='blue';
+  }
+Using the @HostBinding decorator a directive can link an internal property to an input property on the host element. So if the internal property changed the input property on the host element would also change.
