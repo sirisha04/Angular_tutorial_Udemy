@@ -112,7 +112,6 @@ Property & Event Binding:
 
 property and event binding can be done on HTML Elements(Native Property & Events),Directives(Custome propeties & events),
 Components(custom Properties &Events)
-
 Binding to custom properties:(expose our own properties to the other components)
 ----------------------------
 from when parent to child component
@@ -123,10 +122,8 @@ eg:@Input() element:{type:string,name:string,content:string};
 We can also an alias to property
 eg:@Input(srvElement) element:{type:string,name:string,content:string}
 so now this property can be used as "srvElement" in app component
-
 Binding to Custom Events:(@Output)
-------------------------
-from child component to parent componet
+-----------------------from child component to parent componet
 when a button is added in cockpit component and want to communicate this to app component
 go through section 5 ,65 lecture
 We can also an alias to event
@@ -167,3 +164,14 @@ Pipes are used to transform the data in the template itself
 angular has built in pipes for currency ,date and character cases.we, can also create custom pipes
 Pipes takes in data as input and produces output as we desire(in the desired format)
 
+Directives:
+----------
+Attribute:
+Look like a normal HTML attribute(possibly with databinding/event binding)
+Only affect/change the element they are added to
+
+Structural:
+change the structure of the DOM
+eg :ngIf -- if false element is destroyed from the DOM
+Look like a normal HTML attribute but having a leading *
+elements get added/removed 
