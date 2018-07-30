@@ -1,4 +1,4 @@
-Angular is a javascript framework used to create single page web applications
+rAngular is a javascript framework used to create single page web applications
 It will have one single html with multiple javascript code files behind it.the whole page does not reload for each single 
 click .
 Angular is a jsframework that changes the DOM(Html) at runtime
@@ -20,7 +20,7 @@ eg : <input type = "text" [(ngModel)] = "name">
     ngModel listens to the value entered in the text box and binds it to the name attribute
     
 Bootstrap setup:
-go to the project location in cmd and enter npm install --save bootstap
+go to the project location in cmd and enter npm install --save bootstrap
 this will download bootstrap into node_modules 
 set "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
