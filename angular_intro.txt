@@ -118,7 +118,8 @@ from when parent to child component
 To expose any of the property to other components we need to add @Input() decorator to the property 
 eg:@Input() element:{type:string,name:string,content:string};
     also import {Input} from @angular/core; --server component
-    now we can access this property in the app component(parent component)
+
+now we can access this property in the app component(parent component)
 We can also an alias to property
 eg:@Input(srvElement) element:{type:string,name:string,content:string}
 so now this property can be used as "srvElement" in app component
@@ -127,6 +128,7 @@ Binding to Custom Events:(@Output)
 when a button is added in cockpit component and want to communicate this to app component
 go through section 5 ,65 lecture
 We can also an alias to event
+
 eg:@Output(bbCreated)
 
 View encapsulation defines whether the template and styles defined within the component can affect the whole application or vice versa. Angular provides three encapsulation strategies:
@@ -175,3 +177,4 @@ change the structure of the DOM
 eg :ngIf -- if false element is destroyed from the DOM
 Look like a normal HTML attribute but having a leading *
 elements get added/removed 
+Renderer:use renderer to built a custom directive
