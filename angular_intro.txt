@@ -119,6 +119,7 @@ To expose any of the property to other components we need to add @Input() decora
 eg:@Input() element:{type:string,name:string,content:string};
     also import {Input} from @angular/core; --server component
 
+
 now we can access this property in the app component(parent component)
 We can also an alias to property
 heg:@Input(srvElement) element:{type:string,name:string,content:string}
@@ -178,4 +179,11 @@ eg :ngIf -- if false element is destroyed from the DOM
 Look like a normal HTML attribute but having a leading *
 elements get added/removed 
 Renderer:use renderer to built a custom directive
-renderer is used for any DOM manipulations eg:setStyle method in Renderer
+renderer is used for any DOM manipulations eg:setStyle method in Renderer 
+@HostListener Decorator:
+-----------------------
+This is a function decorator that accepts an event name as an argument. When that event gets fired on the host element it calls the associated function
+eg:@HostListener('mouseover') onHover() {
+  window.alert("hover");
+}
+
