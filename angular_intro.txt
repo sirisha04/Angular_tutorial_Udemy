@@ -192,3 +192,12 @@ eg:@HostBinding('style.backgroundColor') backgroundcolor : string='yellow';
    this.backgroundcolor='blue';
   }
 Using the @HostBinding decorator a directive can link an internal property to an input property on the host element. So if the internal property changed the input property on the host element would also change.
+
+* in structural directive is transformed to <ng-template> in the bakened by angular
+eg:
+<div *ngIf="hero" class="name">{{hero.name}}</div>
+<ng-template [ngIf]="hero">
+  <div class="name">{{hero.name}}</div>
+</ng-template>
+The *ngIf directive moved to the <ng-template> element where it became a property binding,[ngIf].
+The rest of the <div>, including its class attribute, moved inside the <ng-template> element
