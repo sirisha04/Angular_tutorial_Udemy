@@ -201,3 +201,7 @@ eg:
 </ng-template>
 The *ngIf directive moved to the <ng-template> element where it became a property binding,[ngIf].
 The rest of the <div>, including its class attribute, moved inside the <ng-template> element
+Services:
+---------
+To avoid Dupliaction of code & and provide acces to data storage
+To manage data storage and acts as centralized repository
