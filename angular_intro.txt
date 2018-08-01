@@ -209,3 +209,4 @@ To manage data storage and acts as centralized repository
 Dependency Injection:
 ------------------
 Angular adds the dependency by injecting the dependency(instance of the class(service)) to the component 
+eg:constructor(private loggingService:LoggingService)
