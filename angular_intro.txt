@@ -209,4 +209,11 @@ To manage data storage and acts as centralized repository
 Dependency Injection:
 ------------------
 Angular adds the dependency by injecting the dependency(instance of the class(service)) to the component 
-eg:constructor(private loggingService:LoggingService)
+eg:constructor(private loggingService:LoggingService){}
+    and also add providers:[LoggingService] in component decorator
+Hierarchial Injector:
+--------------------
+when we create an instance of a service in module it provides hierarchial(tree like) same instances for its child components / modules
+AppModule: Same instance of service is available application wide
+AppComponent:Same instance of service is available for all the components (but not for other services)
+Any other component:Same instance of service is available for the component and all its child components
