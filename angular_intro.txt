@@ -217,3 +217,4 @@ when we create an instance of a service in module it provides hierarchial(tree l
 AppModule: Same instance of service is available application wide
 AppComponent:Same instance of service is available for all the components (but not for other services)
 Any other component:Same instance of service is available for the component and all its child components
+when you want the same instance as the parent component just remove the Service from ther providers list in the child component the rest will be the same
