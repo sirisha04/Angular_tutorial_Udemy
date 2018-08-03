@@ -222,3 +222,7 @@ when you want the same instance as the parent component just remove the Service 
 Injecting Services into services:
 1.Add the service in the App Module Providers section
 2.Add @Injectable() to the service in which you are creating instance of other service
+3.Services can be used for cross-component communication
+    1.create an event emitter in the service
+    2.Emit the event emitter in one component
+    3.subscribe the emitter in another component
